@@ -1,0 +1,252 @@
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+body {
+  background-image: url('pic1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button{
+  color: white;
+}
+
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+}
+
+
+.github {
+  font-size: 3vw;
+  text-align: center;
+  margin: max(1rem, 3vw);
+  border: 0.2rem solid;
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 50px;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+
+  flex: 1;
+}
+
+.github1 {
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color, 0.15s;
+}
+
+.github1:hover {
+  color: rgb(168, 239, 255);
+}
+
+.spotify {
+  font-size: 3vw;
+  background: none;
+  text-align: center;
+  margin: max(1rem, 3vw);
+  border: 0.2rem solid;
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+  ;
+  padding-bottom: 50px;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+
+  flex: 1;
+}
+
+.spotify1 {
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color, 0.15s;
+}
+
+.spotify1:hover {
+  color: rgb(168, 239, 255);
+}
+
+.bio {
+  font-size: 3vw;
+  text-align: center;
+  margin: max(1rem, 3vw);
+  border: 0.2rem solid;
+  padding-top: 47px;
+  padding-right: 15px;
+  padding-left: 15px;
+  ;
+  padding-bottom: 50px;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+
+  flex: 1;
+}
+
+.bio1 {
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color, 0.15s;
+}
+
+.bio1:hover {
+  color: rgb(168, 239, 255);
+}
+
+.tiktok {
+  font-size: 3vw;
+  text-align: center;
+  margin: max(1rem, 3vw);
+  border: 0.2rem solid;
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 50px;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+  flex: 1;
+}
+
+.tiktok1 {
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color, 0.15s;
+}
+
+.tiktok1:hover {
+  color: rgb(168, 239, 255);
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+
+@keyframes borderRotate {
+  100% {
+    --angle: 480deg;
+  }
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #26b1db 0%,
+      #0370ff 29%,
+      #2c04df 67%,
+      #008bfd 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.mytxt {
+  font-size: 30px;
+  color: rgb(168, 239, 255);
+  text-align: center;
+  transition: color, 0.15s;
+}
+
+.intro {
+  text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+
+  html{
+    width: 100%;
+    height: 100%;
+  }
+
+  .animate-charcter {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  .mytxt {
+    font-size: 20px;
+    text-align: center;
+    margin-top: -30px;
+  }
+
+  .github {
+    text-align: center;
+    margin: max(1rem, 3vw);
+    border: 0.1rem solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+  }
+
+  .spotify {
+    text-align: center;
+    margin: max(1rem, 3vw);
+    border: 0.1rem solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+  }
+
+  .bio {
+    text-align: center;
+    margin: max(1rem, 3vw);
+    border: 0.1rem solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+  }
+
+  .tiktok{
+    text-align: center;
+    margin: max(1rem, 3vw);
+    border: 0.1rem solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+}
